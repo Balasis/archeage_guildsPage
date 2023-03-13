@@ -1,0 +1,421 @@
+* { margin: 0; padding: 0px; }
+
+html,body{padding:0;
+	margin:0;
+
+	cursor:url(Curs/wow.cur),auto;
+	margin:auto;
+	overflow:auto;
+	background-color:rgb(0,91,183);
+}
+
+a{  cursor:url(Curs/Hover.cur),auto;    
+	text-decoration:none;
+	color:orange;
+}
+a:hover{
+	color:red;
+}
+button{
+	cursor:url(Curs/mickey_finger.cur),auto;
+}
+
+span{
+	cursor:url(Curs/mickey_finger.cur),auto;
+}
+input:hover{
+	
+}
+label{
+	cursor:url(Curs/mickey_finger.cur),auto;
+}
+
+
+input[type="text"] {cursor:url(Curs/TextLine.cur),auto;}
+input[type="password"] {cursor:url(Curs/TextLine.cur),auto;}
+
+#GameoverChrome{
+	max-width:112.5em;
+	margin:auto;
+	padding:0;
+	overflow:hidden;
+	background-color:transparent;
+	
+	background-position:50% 50%;
+}
+
+
+#why{
+	padding:0;
+	display:flex;
+	margin-top:9em;
+	justify-content:center;
+	width:100%;
+}
+
+.formWrap{
+
+	display:flex;
+	flex-direction:column;
+align-items:center;
+justify-content:center;
+height:45.5em;
+width:45em;
+border-radius:1%;
+background-color:rgb(255,241,234);
+}
+#TheSpartans{
+
+position:absolute;
+top:10em;
+}
+#TheSpartans img{
+
+max-width:9em;
+height:auto;
+}
+
+
+
+#Ahoy{
+font-family:Comic Sans;
+font-size:1.5em;
+font-style:italic;
+position:absolute;
+top:12em;
+opacity:0.7;
+
+}
+
+
+
+
+
+.form{
+
+	margin-top:4.5em;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	color:white;
+	width:100%;
+	
+}
+
+#Username{
+	border-color:rgba(150,167,203,0.5);
+	border-width:2px;
+	border-style:solid;
+border-radius:2%;
+margin:1em;
+
+width:15em;
+height:1.7em;
+font-size:1.6em;
+line-height:0.5em;
+}
+#Username:hover{border-color:rgba(150,167,203,1);}
+
+
+
+#Password{
+-webkit-font-smoothing: antialiased;
+	border-color:rgba(150,167,203,0.5);
+	border-width:2px;
+	border-style:solid;
+border-radius:2%;
+
+
+width:15em;
+height:1.7em;
+font-size:1.6em;
+line-height:0.5em;
+opacity:1;
+
+
+}
+
+#Password:hover{
+border-color:rgba(150,167,203,1);
+}
+
+
+#PasswordToText{
+	position:absolute;
+	margin-left:15em;
+	margin-top:9.2em;
+}
+#PasswordToText:hover{
+	cursor:url(Curs/mickey_finger.cur),auto;
+}
+#ShowPassword{
+	position:absolute;
+	margin-left:13.3em;
+	margin-top:6.8em;
+	color:black;
+	font-style:italic;
+}
+
+#PlayerName{
+-webkit-font-smoothing: antialiased;
+	border-color:rgba(150,167,203,0.5);
+	border-width:2px;
+	border-style:solid;
+border-radius:2%;
+margin-top:1em;
+margin:1em;
+
+width:15em;
+height:1.7em;
+font-size:1.6em;
+line-height:0.5em;
+opacity:1;
+
+
+}
+
+#PlayerName:hover{
+border-color:rgba(150,167,203,1);
+}
+
+
+#SerialKey{
+-webkit-font-smoothing: antialiased;
+	border-color:rgba(150,167,203,0.5);
+	border-width:2px;
+	border-style:solid;
+border-radius:2%;
+
+margin-bottom:2.5em;
+
+width:15em;
+height:1.7em;
+font-size:1.6em;
+line-height:0.5em;
+opacity:1;
+
+}
+
+#SerialKey:hover{
+border-color:rgba(150,167,203,1);
+}
+
+
+
+
+
+
+
+
+
+
+/*===========================================================================================================*/
+/*=====================================         FOR SUBMIT       ============================================*/
+/*===========================================================================================================*/
+#submit{
+	display:none;
+
+}
+
+#SubmitBorder{
+	display:flex;
+
+	justify-content:center;
+	
+	width:15em;
+height:1.7em;
+background: radial-gradient( black,white ,grey,#CDCED0,#D5D0CD,black,#D5D0CD);
+  border-radius: 8px;
+	font-size:1.6em;
+	border-radius:10px; 
+
+}
+
+
+
+#SubmitBorder:hover #InsideSubmit{background-color:rgb(90,0,0);}
+
+
+#InsideSubmit{
+	display:flex;
+text-align:center;
+margin-top:0.1em;
+	justify-content:center;
+background-color:rgb(0,91,183);
+ position:relative;
+  width:14.7em;
+  height:1.5em;
+  border-radius: 8px;
+  box-shadow:0px 0px 1px black;
+ 
+}
+#ThreeD{
+	border-radius:8px 8px 0px 0px;
+	position:absolute;
+	
+	width:15em;
+	height:0.63em;
+	background-color:rgba(70,163,255,0.3);
+
+	
+margin-bottom:1em;
+
+
+}
+
+/*Info button */
+#MoreInfo{
+	font-style:italic;
+	position:absolute;
+	top:48em;
+}
+#Infobutton{
+	padding:0;
+	border:none;
+	background:none;
+	color:orange;
+}
+#Infobutton:hover{
+	color:red;
+}
+
+#CloseRegister{
+position:absolute;
+right:1em;
+top:0.5em;
+}
+#CloseRegister:hover{
+	color:orange;
+	
+}
+
+#Register{
+	font-size:1.2em;
+	border-radius:2px;
+	align-items:center;
+	justify-content:center;
+	width:26em;
+	height:12em;
+	font-style:italic;
+	position:fixed;
+	top:24.5em;
+	display:none;
+	color:white;
+	background-color:black;
+	border-color:black;
+	border-width:1px;
+	border-style:solid;
+	box-shadow:0px 0px 5px orange;
+}
+#Register p{
+	text-align:left;
+	margin-left:0.5em;
+}
+#MissclickToLogin{
+		font-style:italic;
+	position:absolute;
+	top:28.5em;
+	font-size:1.8em;
+	text-decoration:underline;
+}
+
+
+
+
+
+
+#UsernameCheck{
+	position:absolute;
+	top:26.5em;
+	
+	width:20em;
+	height:1em;
+	color:red;
+	font-style:italic;
+
+}
+#PlayerNameCheck{
+	position:absolute;
+	top:35.2em;
+	
+	width:20em;
+	height:1em;
+	color:red;
+	font-style:italic;
+}
+#Keymom{	
+	
+
+	text-align:center;
+	position:absolute;
+	top:40em;
+	width:30em;
+	
+	color:red;
+	font-style:italic;
+}
+#SignedUp{
+	display:none;
+	position:absolute;
+	top:10em;
+	font-size:3em;
+	font-style:italic;
+}
+
+#Home{
+margin-left:19.5em;
+
+position:absolute;
+
+width:4.5em;
+height:4.5em;
+}
+#Home img{
+	width:100%;
+	height:auto;
+}
+#HomeOut{
+
+margin-left:19.5em;
+	position:absolute;
+	
+	width:4.5em;
+height:4.5em;
+
+}
+#HomeOut img{
+	width:100%;
+	height:auto;
+}
+#HomeOut:hover{
+animation-name:HomeOff;
+animation-duration:1s;
+animation-fill-mode:forwards;
+}
+@keyframes HomeOff{
+0%{opacity:1;}
+100%{opacity:0;}
+}
+#WraptheHome{
+	top:10em;
+	width:6em;
+	height:6em;
+	display:block;
+	position:absolute;
+}
+#GoHomeText{
+	white-space:nowrap;
+	font-size:1.2em;
+	text-align:center;
+	margin-left:16.3em;
+	position:absolute;
+	margin-top:3.9em;
+	animation-name:textColor;
+	animation-duration:10s;
+	animation-iteration-count:infinite;
+}
+@keyframes textColor{
+	0%{color:black;}
+	50%{color:rgb(255,165,0);}
+	100%{color:black;}
+}

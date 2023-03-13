@@ -1,0 +1,3 @@
+aristero alt + ; + fwnhen= dialitika
+ctrl+f    =find stous browser
+ctrl+enter =kainourgia selida ston word

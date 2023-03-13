@@ -1,0 +1,22 @@
+
+
+
+Program Files\MySQL\MySQL Server 5.6\bin
+
+
+
+to create the database backup get in cmd with admin...
+then change directory (cd.. ) to program files e.t.c /bin which mysqldumb.exe is..
+then type:
+mysqldump --user=<username> --password=<password> --result-file=<path_to_backup_file> --databases <database_name>
+for example:
+mysqldump --user=root --password=82468246a --result-file=c:\guild.sql --databases guild
+
+
+to restore the database from the created sql file you type this in cmd(admin)
+
+:mysql --user=root --password=82468246a <c:\guild.sql
+
+(guild was the name of the file created from guild schema)..
+mysqldump creates the database (in program files e.t.c/ bin)
+mysql 

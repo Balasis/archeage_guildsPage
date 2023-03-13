@@ -1,0 +1,6 @@
+C:\Users\Oathkeeper\AppData\Local\Google\Chrome\User Data\Default\Cache
+
+
+Control panel->File explorer folder->view->show hidden files apply ok.
+
+leftover processes /restart to clean ram.Happens mostly when you close and open multiple software for a long time without shutting down your pc.

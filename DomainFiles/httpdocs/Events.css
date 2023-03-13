@@ -1,0 +1,1398 @@
+html{
+	
+	
+}
+body{
+	min-height:127em;
+	overflow-x:hidden;
+	padding:0;
+	margin:0;
+	background-color:black;
+	cursor:url(Curs/wow.cur),auto;
+	margin:auto;
+	font-family: Verdana, sans-serif;
+	background-image:url(Pic/Calendar/sigh.jpg),url('Pic/Calendar/IfNoEvent.png');
+	background-size:100% 85em,30% 30%;
+	  background-position:
+    top right, /* this positions the first image */
+    50% 93%; /* this positions the second image */
+  background-repeat:
+    no-repeat;
+}
+a{  cursor:url(Curs/Hover.cur),auto;    
+	text-decoration:none;
+	color:rgb(176,147,103);
+}
+
+label{
+	cursor:url(Curs/Hover.cur),auto;  
+}
+input{
+	cursor:url(Curs/mickey_finger.cur),auto;
+}
+
+#WrapperFromBodyToWholePageDiv{
+	max-width:112.5em;
+	margin:auto;
+	padding:0;
+	
+	background-color:transparent;
+	
+	background-position:50% 50%;
+}
+#WholePageDiv{
+	padding:0;
+	margin:0;
+
+	background-color:rgb(176,147,103);
+	max-width:98.6em;
+	
+	margin:auto;
+
+	
+}
+
+
+
+
+
+#navbar{
+	display:block;
+	z-index:490;
+	background-color:;
+	position:fixed;
+	width:100%;
+	max-width:93.6em;
+	padding:0;
+	top:0.5em;
+
+	
+	
+}
+#navUl{
+	position:relative;
+	z-index:450;
+	padding:0;
+	margin:0;
+	
+	background-color:transparent;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-position:center;
+	width:100%;
+	max-width:93.6em;
+	background-image:url(Pic/navBG.png);
+	min-height:5em;
+	display:flex;
+	border-radius:;
+	justify-content:space-between;
+	flex-wrap:nowrap;
+
+}
+#navUl li{
+margin-top:-0.3em;
+	padding:0.5em;
+	font-family:Bookman;
+	
+	white-space:nowrap;
+	max-height:1.5em;
+	
+	font-size:2.5em;
+	line-height:1.5em;
+	color:white;
+	list-style-type:none;
+}
+
+#navUl a{
+	display:inline-block;
+	color:rgb(36,36,36);
+}
+#navUl a:hover {
+	animation-fill-mode: forwards;
+	color:white;
+
+	animation-name:NavHoverLinks;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+}
+@keyframes NavHoverLinks{
+	0%{text-shadow: 0px 0px 0px  #5b0000;}
+	50%{text-shadow: 0px 0px 25px  #5b0000;}
+	100%{text-shadow: 0px 0px 0px  #5b0000;}
+}
+/*==================================================================================================*/
+
+/*=================================              IDS OF LI'S          ==================================*/
+
+/*========================================🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇======================================*/
+#Logo{
+	
+	left:1em;
+}
+#Logo img{
+	margin-top:-0.1em;
+	height:2em;
+	width:2.5em;
+}
+#Logo a:hover{
+	animation-name:rotateCrazy;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+	animation-fill-mode: forwards;
+
+	 
+}
+@keyframes rotateCrazy{
+0%{transform:scale(1.0);}
+
+50%{transform:scale(1.3);margin-top:0.3em;}
+
+100%{transform:scale(1.0);margin-top:0.0em;}
+}
+#Forum{
+
+	left:5em;
+}
+#Guilds{
+
+	
+}
+#Events{
+
+	
+}
+#EventsWithoutLogin{
+	color:rgba(0,0,0,0.7);
+}
+#EventsWithoutLogin:hover{
+	color:red;
+}
+#EventsWithoutLogin:hover #HoverEventWithoutLogin{display:block;}
+#EventsWithoutLogin img{
+	margin-left:0.3em;
+	margin-top:0.6em;
+	position:absolute;
+	height:auto;
+	width:0.7em;
+}
+#HoverEventWithoutLogin{
+	text-align:center;
+	line-height:1.5;
+	font-size:0.5em;
+	display:none;
+	position:absolute;
+	width:15em;
+	border-radius:10px 10px 10px 10px;
+	background-color:white;
+	color:red;
+	font-style:italic;
+}
+#Login{
+	
+margin-right:3em;
+}
+#PictureLog{
+	
+	z-index:960;
+	overflow:hidden;
+	border-radius:360%;
+	color:grey;
+	animation-name:LogoGlide;
+	animation-duration:5s;
+	animation-iteration-count:infinite;	
+}
+#PictureLog:hover{
+	cursor:url(Curs/Hover.cur),auto;
+}
+#ProfLog{
+	z-index:960;
+	display:block;
+width:4em;
+height:4em;
+}
+
+#LoginName{
+	
+	
+
+}
+#LoginName:hover{
+	
+}
+@keyframes LogoGlide{
+	  0% {box-shadow:0px 0px 0px red;}
+	  50%{box-shadow:0px 0px 50px red;}
+	100%{box-shadow:0px 0px 0px red;}
+}
+
+#LogOutBox{
+	border-color:rgb(176,147,103);
+	border-width:0.1em;
+	border-style:solid;
+	color:black;
+	z-index:-2;
+	margin-left:0.1em;
+	margin-top:-2.65em;
+	
+	text-align:center;
+	position:absolute;
+	display:none;
+	width:3.6em;
+	height:8.5em;
+	border-radius:0px  0px 10px 10px;
+	font-style:italic;
+	font-size:1em;
+	background-color:rgb(235,207,146);
+	border-top-width:0;
+}
+#LogMeOut{
+	display:none;
+
+}
+
+#More{
+	text-align:center;
+	position:absolute;
+	width:100%;
+	margin-top:4em;
+	font-size:0.7em;
+	line-height:1;
+}
+#More:hover{
+	color:white;
+	cursor:url(Curs/Hover.cur),auto;
+}
+#More img{
+		position:absolute;
+	margin-top:-1.3em;
+	margin-left:1.4em;
+	width:0.8em;
+	height:auto;
+}
+
+#MoreBox{
+
+position:absolute;
+margin-top:-6em;
+z-index:-1;
+		border-color:rgb(176,147,103);
+	border-width:0.1em;
+	border-style:solid;
+	color:black;
+	height:8em;
+	background-color:rgb(235,207,146);
+	margin-left:0.1em;
+	opacity:0;
+	width:3.6em;
+	border-radius:10px  10px 0px 0px;
+	font-style:italic;
+	font-size:1em;
+	border-bottom-width:0em;
+}
+
+.MoreBoxEffectIn{
+		animation-name:MoreBoxIn;
+	animation-duration:2s;
+	animation-fill-mode: forwards;
+}
+@keyframes MoreBoxIn{
+0%{margin-top:-6em;opacity:0;}
+1%{opacity:1;}
+100%{margin-top:1.5em;opacity:1;}
+
+}
+
+.MoreBoxEffectOut{
+		animation-name:MoreBoxOut;
+	animation-duration:2s;
+	animation-fill-mode: forwards;
+}
+@keyframes MoreBoxOut{
+0%{margin-top:1.5em;opacity:1;}
+99%{opacity:1;}
+100%{margin-top:-6em;opacity:0;}
+
+}
+
+
+#DeleteAccount{
+	margin-top:5em;
+	text-align:center;
+	font-size:0.7em;
+	line-height:1;
+}
+#DeleteAccount:hover{
+	color:white;
+}
+.MoveLogOutBox{
+	animation-name:MoveLogOut;
+	animation-duration:2s;
+
+	animation-fill-mode: forwards;
+}
+@keyframes MoveLogOut{
+	0%{margin-top:-2.65em;}
+	100%{margin-top:2.85em;}
+
+}
+
+.RemoveLogOutBox{
+	animation-name:Remove;
+	animation-duration:2s;
+	
+	animation-fill-mode: forwards;
+}
+@keyframes Remove{
+	0%{margin-top:2.65em;}
+	100%{margin-top:-2.65em;}
+
+}
+
+
+#SignOutLabel{
+	
+	position:absolute;
+	margin-top:9.8em;
+	font-size:0.7em;
+	width:100%;
+	text-align:center;
+
+}
+#SignOutLabel:hover{
+cursor:url(Curs/Hover.cur),auto;
+color:white;
+}
+#ChangeProfilePictureLabel{
+		margin-top:6.8em;
+	font-size:0.7em;
+	width:100%;
+	text-align:center;
+	position:absolute;
+
+	color:black;
+
+}
+#ChangeProfilePictureLabel:hover{
+
+cursor:url(Curs/Hover.cur),auto;
+color:white;
+}
+#UploadLogo{
+	display:none;
+}
+#Yolo{
+	cursor:auto;
+	display:none;
+}
+#ChangeDaLogoSize{
+	line-height:1.2;
+	margin-left:-1em;
+
+
+}
+#ChangeDaLogoSize img{
+	position:absolute;
+	margin-top:-0.4em;
+	margin-left:0.3em;
+	width:1em;
+	height:auto;
+}
+
+
+
+#Skoupa{
+display:none;
+}
+
+
+
+
+
+#leftBlackWing{
+
+ position:absolute;
+ top:-10.2em;
+ left:-8em;
+ transform:rotate(206deg);
+ z-index:300;
+  height:21em;
+	width:19.5em;
+}
+#leftBlackWing img{height:auto;width:100%;position:relative;z-index:300;}
+.leftBlackWingMove{
+
+	animation-name:ScrollBlackLeft !important;
+	animation-duration:0.30s !important;
+	animation-timing-function:linear !important;
+animation-iteration-count:1 !important;
+animation-delay:0s !important;
+}
+@keyframes ScrollBlackLeft{
+	0%{transform:rotate(206deg);}
+	50% {transform:rotate(226deg);}
+	100%{transform:rotate(206deg);}
+}
+
+
+#rightBlackWing{
+ position:absolute;
+ top:-10.2em;
+ transform:rotate(155deg);
+ right:-8.5em;
+ z-index:300;
+ height:21em;
+	width:19.5em;
+
+}
+#rightBlackWing img{height:auto;width:100%;position:relative;z-index:300;}
+.rightBlackWingMove{
+	animation-name:ScrollBlackRight !important;
+	animation-duration:0.30s !important;
+	animation-delay:0s !important;
+	animation-timing-function:linear !important;
+animation-iteration-count:1 !important;
+}
+@keyframes ScrollBlackRight{
+	0%{transform:rotate(155deg);}
+	50% {transform:rotate(135deg);}
+	100%{transform:rotate(155deg);}
+}
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#DaysName{
+	z-index:355;
+	width:100%;
+		border-color:transparent;
+	border-width:0.4em;
+	border-style:solid;
+	/*margin-top:-3.6em;*/
+		position:fixed;
+	 top:13em;
+}
+
+/*===================================================*/
+/*=====================Days=====================*/
+/*===================================================*/
+/*===================================================*/
+#Monday{
+margin-left:1.05em;
+	font-style:italic;
+	font-family:Comic Sans;
+	text-align:center;
+	color:white;
+	font-size:2em;
+	width:6em;
+	height:1.5em;
+	background-color:rgb(91,0,0);
+	border-width:0.15em;
+	border-color:rgb(176,147,103);
+	border-style:solid;
+	border-radius:10px 10px 10px 10px;
+	display:inline-block;
+	position:absolute;
+}
+#Tuesday{
+margin-left:7.7em;
+	font-style:italic;
+	font-family:Comic Sans;
+	text-align:center;
+	color:white;
+	font-size:2em;
+	width:6em;
+	height:1.5em;
+	background-color:rgb(91,0,0);
+	border-width:0.15em;
+	border-color:rgb(176,147,103);
+	border-style:solid;
+	border-radius:10px 10px 10px 10px;
+	display:block;
+	position:absolute;
+}
+
+@keyframes Ohwell{
+	0%{box-shadow:0px 0px 0px green;}
+	50%{box-shadow:0px 0px 30px green;}
+	100%{box-shadow:0px 0px 0px green;}
+}
+.qwer{
+  animation-name: Ohwell;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+	border-color:lightgreen !important;
+	color:green !important;
+}
+
+
+
+#Wednesday{
+margin-left:14.4em;
+	font-style:italic;
+	font-family:Comic Sans;
+	text-align:center;
+	color:white;
+	font-size:2em;
+	width:6em;
+	height:1.5em;
+	background-color:rgb(91,0,0);
+	border-width:0.15em;
+	border-color:rgb(176,147,103);
+	border-style:solid;
+	border-radius:10px 10px 10px 10px;
+	display:inline-block;
+	position:absolute;
+}
+#Thursday{
+margin-left:21.1em;
+	font-style:italic;
+	font-family:Comic Sans;
+	text-align:center;
+	color:white;
+	font-size:2em;
+	width:6em;
+	height:1.5em;
+	background-color:rgb(91,0,0);
+	border-width:0.15em;
+	border-color:rgb(176,147,103);
+	border-style:solid;
+	border-radius:10px 10px 10px 10px;
+	display:inline-block;
+	position:absolute;
+}
+#Friday{
+margin-left:27.75em;
+	font-style:italic;
+	font-family:Comic Sans;
+	text-align:center;
+	color:white;
+	font-size:2em;
+	width:6em;
+	height:1.5em;
+	background-color:rgb(91,0,0);
+	border-width:0.15em;
+	border-color:rgb(176,147,103);
+	border-style:solid;
+	border-radius:10px 10px 10px 10px;
+	display:inline-block;
+	position:absolute;
+}
+#Saturday{
+margin-left:34.45em;
+	font-style:italic;
+	font-family:Comic Sans;
+	text-align:center;
+	color:white;
+	font-size:2em;
+	width:6em;
+	height:1.5em;
+	background-color:rgb(91,0,0);
+	border-width:0.15em;
+	border-color:rgb(176,147,103);
+	border-style:solid;
+	border-radius:10px 10px 10px 10px;
+	display:inline-block;
+	position:absolute;
+}
+#Sunday{
+margin-left:41.15em;
+	font-style:italic;
+	font-family:Comic Sans;
+	text-align:center;
+	color:white;
+	font-size:2em;
+	width:6em;
+	height:1.5em;
+	background-color:rgb(91,0,0);
+	border-width:0.15em;
+	border-color:rgb(176,147,103);
+	border-style:solid;
+	border-radius:10px 10px 10px 10px;
+	display:inline-block;
+	position:absolute;
+}
+
+
+
+/*===================================================*/
+/*=====================Days=====================*/
+/*===================================================*/
+/*===================================================*/
+
+#getLost{
+	visibility:hidden;
+	position:absolute;
+color:white;
+margin-left:-4em !important;
+}
+#getLostToo{
+	position:absolute;
+	color:white;
+	margin-left:4em !important;
+	margin-top:-2.35em !important;
+}
+
+#UpcomingMonth{
+	margin-top:2em;
+margin-left:2em;
+display:none;
+}
+
+
+
+
+#CurrentMonth{
+display:block;
+margin-top:2em;
+margin-left:2em;
+}
+
+
+#Month{
+	padding:0;
+	font-style:italic;
+	margin-top:0.2em;
+	font-family:comic Sans;
+}
+#NextMonth{
+	display:none;
+	padding:0;
+	font-style:italic;
+	margin-top:0.2em;
+	font-family:comic Sans;
+}
+#MonthDiv{
+	position:absolute;
+	display:block;
+	background-color:rgb(176,147,103);
+	text-align:center;
+	font-size:3em;
+color:white;
+margin:auto;
+right:0;
+left:0;
+width:10em;
+height:1.5em;
+margin-top:-2.4em;
+border-radius:10px 10px 10px 10px;
+}
+/* 176 147 103*/
+#FlexBoxCallendar{
+	border-color:transparent;
+	border-width:0.4em;
+	border-style:solid;
+	border-radius:0px 0px 0px 0px;
+	margin-top:15em;
+	
+	display:block;
+	
+	flex-wrap:nowrap;
+  background-image:url('Pic/Calendar/WorkedBg.png');
+  background-size:100% 100%;
+  align-items: space-between;
+  	color:white;
+	height:70em;
+
+}
+
+
+.DaysGone{
+	position:relative;
+	display:inline-block;
+		margin:0.5em;
+	background-image:url('Pic/Calendar/Testing.png');
+	background-color:black;
+	width:12em;
+	height:10em;
+	border-color:rgb(176,147,103);
+	border-width:0.3em;
+	border-style:solid;
+	border-radius:6px 6px 10px 10px;
+	background-image:url(Pic/Calendar/Testing.png);
+	background-size:100% 100%;
+	
+}
+.DaysGone:hover{
+	box-shadow:0px 0px 45px green!important;
+	border-color:green!important;
+}
+.DaysGone:hover .DayTitle{border-color:green!important;background-color:green!important;}
+
+.DayTitle{
+
+	position:relative;
+	margin-left:-0.27em;
+	margin-top:-0.7em;
+	background-color:rgb(176,147,103);
+	width:104%;
+	height:1.5em;
+	text-align:center;
+	border-color:rgb(176,147,103);
+	border-width:0.4em;
+	border-style:solid;
+	border-radius:10px 10px 0px 0px;
+	
+}
+.Diamond{
+		position:absolute;
+	display:block;
+	width:100%;
+	top:0.75em;
+	max-height:1.3em;
+	overflow:hidden;
+	text-align:center;
+	background-color:rgba(148,0,211,0.8);
+	color:yellow;
+	border-radius:0px 0px 10px 10px;
+	font-style:italic;
+}
+.Platinum{
+
+	position:absolute;
+	display:block;
+	width:100%;
+	top:2.8em;
+	max-height:1.3em;
+	overflow:hidden;
+	text-align:center;
+	background-color:rgba(99,89,89,0.8);
+	box-shadow:0px 8px 15px #e5e4e2;
+	border-radius:10px 10px 10px 10px;
+
+}
+
+.Gold{
+	position:absolute;
+	display:block;
+	width:100%;
+	top:4.35em;
+	max-height:1.3em;
+	overflow:hidden;
+	text-align:center;
+	background-color:rgba(255,215,0,0.8);
+	box-shadow:0px 8px 15px #FFD700;
+	border-radius:10px 10px 10px 10px;
+}
+.Silver{
+	position:absolute;
+	display:block;
+	width:100%;
+	top:5.8em;
+	max-height:1.3em;
+	overflow:hidden;
+	text-align:center;
+	background-color:silver;
+	
+	border-radius:10px 10px 10px 10px;
+}
+.Bronze{
+		position:absolute;
+	display:block;
+	width:100%;
+	top:7.2em;
+	max-height:2.2em;
+	overflow:hidden;
+	text-align:center;
+	background-color:brown;
+	
+	border-radius:10px 10px 10px 10px;
+}
+
+
+#inputWrapper{
+	transform:scale(2,2);
+	background-color:rgb(91,0,0);
+	display:none;
+	flex-wrap: wrap;
+  	width:10em;
+  align-items: space-between;
+  	color:white;
+	height:5em;
+	position:absolute;
+top:57em;
+right:35em;
+}
+.hideRadio{
+	
+	display:none;
+}
+
+
+#wrapperEventInfo{
+
+	display:block;
+	position:absolute;
+	width:98.6em;
+	margin-top:0;
+	min-height:57em;
+	background-image:url('Pic/Calendar/WorkedBg.png');
+	background-size:100% 100%;
+}
+
+#SecondWraperInfo{
+
+}
+
+
+
+.hideAlsoDat{
+	margin:auto;
+	width:95%;
+	position:relative;
+	display:none;
+	background-color:transparent;
+	color:black;
+	margin-top:2em;
+}
+
+
+
+
+
+
+
+
+/*=================================================*/
+/*=====================      THE END  =============*/
+/*=================================================*/
+
+
+.Section1DivSub{
+
+	display:flex;
+	flex-direction:row;
+	background-color:transparent;
+	width:100%;
+	position:relative;
+	color:white;
+}
+.SectionText{
+border-radius:10px 10px 10px 10px;
+max-height:54em;
+font-family:Comic Sans MS;
+color:rgba(255,255,255,0.9);
+width:55%;
+
+
+
+background-position:;
+background-repeat:no-repeat;
+background-size:100% 100%;
+background-image:url("Pic/Calendar/pinakas.jpg");
+background-color:rgba(9,9,174,1.0);
+}
+.WrapToFit{
+	scrollbar-width: thin;
+	overflow-y:auto;
+	display:block;
+	max-height:80%;
+	width:90%;
+	margin:auto;
+	margin-top:5em;
+}
+.SectionText h1{
+	
+	margin-top:0.5em;
+	font-size:1.5em;
+	text-align:center;
+	
+}
+.EventOne{
+
+	display:block!important;
+}
+.SectionText h2{
+	margin-top:0.5em;
+	font-size:1.5em;
+	text-align:center;
+}
+.SectionText h3{
+	margin-top:0.5em;
+	font-size:1.5em;
+	text-align:center;
+}
+.SectionText h4{
+	margin-top:0.5em;
+	font-size:1.5em;
+	text-align:center;
+}
+.SectionText h5{
+	margin-top:0.5em;
+	font-size:1.5em;
+	text-align:center;
+}
+.SectionText p{
+	font-size:1.4em;
+	margin-left:1em;
+	text-align:left;
+}
+
+
+
+
+
+.SectionVideo{
+	display:flex;
+flex-direction:column;
+margin-top:30em;
+background-color:transparent;
+width:45%;
+
+}
+#BlockWrapper{
+position:absolute;
+display:block;
+margin-top:2em;
+margin-left:53.5em;
+width:43em;
+}
+
+
+.SectionImage{
+width:100%;
+display:flex;
+
+flex-direction:column;
+position:absolute;
+background-color:transparent;
+
+
+}
+
+
+#Slide2Position{
+margin-bottom:0em;
+}
+#Slide2Position img{
+	height:100%;
+vertical-align: middle;
+}
+
+
+/*======================================================================================================*/
+/*======================================  Classes for Image slider======================================*/
+/*========================================🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇=========================================*/
+.SliderDiv1 {
+	display: none;
+
+}
+.SliderDiv1:hover{
+	box-shadow:0em 0em 5em white;
+	cursor:url(Curs/Hover.cur),auto;
+	opacity:0.9; 
+}
+.SliderDiv2:hover{
+	box-shadow:0em 0em 5em white;
+	cursor:url(Curs/Hover.cur),auto;
+	opacity:0.9; 
+}
+.SliderDiv2 {display: none}
+
+.imgHeight{
+
+	height:22em;
+}
+/* Slideshow container */
+.slideshow-container {
+  width:32em;
+  max-width:75%;
+  position: relative;
+  margin: auto;
+  margin-top:2em;
+}
+
+
+.slideshow-container img{
+height:100%;
+vertical-align: middle;
+}
+
+.videoEvent{
+	  min-width:32em;
+	  height:22em;
+	  max-height:52em;
+  max-width:75%;
+  position: relative;
+  margin: auto;
+}
+.videoEvent iframe{
+	min-width:100%;
+	min-height:100%;
+}
+
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  position: absolute;
+  top: 35%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next:hover{
+	color:orange;
+}
+.prev:hover{
+	color:orange;
+}
+/* Position the "next button" to the right */
+.next {
+  right: -1.5em;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+left:-1.5em;
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size:2em;
+  position: absolute;
+  bottom:0.5em;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color:rgb(255,255,255);
+  -webkit-text-stroke-color:black;
+  -webkit-text-stroke: 1px;
+  font-size: 2em;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}		
+
+.SliderQuote{
+
+	display:flex;
+	align-content:center;
+	justify-content:center;
+	margin:auto;
+	max-width:100%;
+	background-color:rgb(35,35,35);
+	text-align:center;
+	min-height:4em;
+	
+	
+}
+.SliderQuote p{
+color:white;
+	font-size:1.2em;
+}
+/*FOR ZOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOM*/
+.xXx{
+top:-1em;
+right:-1.5em;
+position:absolute;
+color:white;
+font-size:5em;	
+}
+.xXx:hover{
+color:orange;
+}
+
+/*======================================================================================================*/
+/*======================================  Classes and Id for Zoom1 =============================================*/
+/*========================================🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇=========================================*/
+.ZoomImage1Wrap{
+	top:0;
+	position:absolute;
+	display:none;
+	position:fixed;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,1);
+	z-index:9999;
+}
+
+.Slide1PositionZoom{
+	margin-top:5em;
+	max-width:75%;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+
+	
+}
+
+
+
+.prev1Zoom {
+  position: absolute;
+  top: 35%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 10em;
+  
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  left:-0.7em;
+}
+
+.next1Zoom {
+  position: absolute;
+  top: 35%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 10em;
+  
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next1Zoom:hover{
+	color:orange;
+}
+.prev1Zoom:hover{
+	color:orange;
+}
+/* Position the "next button" to the right */
+.next1Zoom {
+  right: -0.7em;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+/* Caption text */
+.text1Zoom {
+	
+  color: #f2f2f2;
+  font-size:2em;
+display:block;
+  position:absolute;
+  right:0em;
+  left:0em;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+ bottom:0.5em;
+   -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+/* Number text (1/3 etc) */
+.numbertext1Zoom {
+  color:rgb(255,255,255);
+  -webkit-text-stroke-color:black;
+  -webkit-text-stroke: 1px;
+  font-size: 2em;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}		
+
+.SliderQuote1Zoom{
+	height:4em;
+	display:flex;
+	align-content:center;
+	justify-content:center;
+	margin:auto;
+	max-width:100%;
+	background-color:rgb(35,35,35);
+	text-align:center;
+	
+	
+}
+.SliderQuote1Zoom p{
+color:white;
+	font-size:1.4em;
+
+	line-height:0.5em;
+}
+.imgHeightZoom{
+	
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:40em;
+	margin-right:auto;
+	margin-left:auto;
+	overflow:hidden;
+
+
+}
+.imgHeightZoom img{
+max-width:100%;
+height:100%;
+
+}
+/*======================================================================================================*/
+/*======================================  Classes and Id for Zoom1 =============================================*/
+/*========================================🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇=========================================*/
+
+
+
+#ZoomImage2Wrap{
+	
+	display:none;
+	position:fixed;
+	min-width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,1);
+	z-index:9999;
+}
+
+.Slide2PositionZoom{
+	margin-top:5em;
+	max-width:75%;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+
+.prev2Zoom {
+  position: absolute;
+  top: 35%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 10em;
+  
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  left:-0.7em;
+}
+
+.next2Zoom {
+  position: absolute;
+  top: 35%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 10em;
+  
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next2Zoom:hover{
+	color:orange;
+}
+.prev2Zoom:hover{
+	color:orange;
+}
+/* Position the "next button" to the right */
+.next2Zoom {
+  right: -0.7em;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+/* Caption text */
+.text2Zoom {
+	background-color:black;
+  color: #f2f2f2;
+  font-size:2em;
+  position: absolute;
+  right:0em;
+ bottom:0.80em;
+   -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+/* Number text (1/3 etc) */
+.numbertext2Zoom {
+  color:rgb(255,255,255);
+  -webkit-text-stroke-color:black;
+  -webkit-text-stroke: 1px;
+  font-size: 2em;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}		
+
+.SliderQuote2Zoom{
+
+	display:flex;
+	align-content:center;
+	justify-content:center;
+	margin:auto;
+	max-width:100%;
+	background-color:rgb(35,35,35);
+	text-align:center;
+	
+	
+}
+.SliderQuote2Zoom p{
+color:white;
+	font-size:1.4em;
+	line-height:0.5em;
+}
+
+
+#clock{
+	z-index:999;
+	position:absolute;
+	right:19em;
+	top:1.7em;
+	min-width:4em;
+	min-height:1.6em;
+	color:black;
+	border-width:0.2em;
+	background-color:white;
+	border-style:solid;
+	border-color:rgb(91,0,0);
+	border-radius:10px 10px 10px 10px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:98.6em){html,body{font-size:1vw;}

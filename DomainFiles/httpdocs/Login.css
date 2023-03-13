@@ -1,0 +1,393 @@
+* { margin: 0; padding: 0px; }
+
+html,body{padding:0;
+	margin:0;
+	
+	cursor:url(Curs/wow.cur),auto;
+	margin:auto;
+	overflow:auto;
+	background-color:rgb(0,91,183);
+}
+
+a{  cursor:url(Curs/Hover.cur),auto;    
+	text-decoration:none;
+	color:orange;
+}
+a:hover{
+	color:red;
+}
+button{
+	cursor:url(Curs/mickey_finger.cur),auto;
+}
+span{
+	cursor:url(Curs/mickey_finger.cur),auto;
+}
+input:hover{
+	
+}
+label{
+	cursor:url(Curs/mickey_finger.cur),auto;
+}
+
+
+input[type="text"] {cursor:url(Curs/TextLine.cur),auto;}
+input[type="password"] {cursor:url(Curs/TextLine.cur),auto;}
+
+#GameoverChrome{
+	max-width:112.5em;
+	margin:auto;
+	padding:0;
+	overflow:hidden;
+	background-color:transparent;
+	
+	background-position:50% 50%;
+}
+
+
+#why{
+	padding:0;
+	display:flex;
+	margin-top:13em;
+	justify-content:center;
+	width:100%;
+}
+#WrongLogin{
+position:absolute;
+color:red;
+font-style:italic;
+top:25em;
+}
+#PicaStandUsername{
+		position:absolute;
+	width:5em;
+	top:17.2em;
+	right:30em;
+	z-index:9999;
+	display:none;
+}
+#PicaStandUp{
+	position:absolute;
+	width:5em;
+	top:9em;
+	left:38em;
+	z-index:9999;
+
+}
+.PicaStandUp{
+	animation-name:OpacityPicaStandUp;
+	animation-duration:0.1s;
+	animation-fill-mode: forwards;
+}
+@keyframes OpacityPicaStandUp{
+	0%{opacity:1;}
+	100%{opacity:0;}
+}
+#Pica{
+	width:6em;
+	top:4.15em;
+	left:20em;
+	position:absolute;
+	opacity:0;
+	z-index:9999;
+}
+@keyframes picaMove{
+
+}
+
+
+.formWrap{
+
+	display:flex;
+	flex-direction:column;
+align-items:center;
+justify-content:center;
+height:33.5em;
+width:45em;
+border-radius:1%;
+background-color:rgb(255,241,234);
+}
+#TheSpartans{
+
+position:absolute;
+top:14em;
+}
+#TheSpartans img{
+
+max-width:9em;
+height:auto;
+}
+
+
+
+#Ahoy{
+font-family:Comic Sans;
+font-size:1.5em;
+font-style:italic;
+position:absolute;
+top:15em;
+opacity:0.7;
+
+}
+.AhoyKeyframe{animation-name:colorizeAhoy;animation-duration:2s;animation-fill-mode: forwards;}
+.AhoyKeyframeBack{animation-name:colorizeAhoyReverse;animation-duration:2s;animation-fill-mode: forwards;}
+@keyframes colorizeAhoy{
+	0%{  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color:#5A0000;
+  opacity:0.7;
+}
+	100%{  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #5A0000;opacity:1;}	
+}
+@keyframes colorizeAhoyReverse{
+	0%{  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #5A0000;opacity:1;}
+	100%{  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color:#5A0000;opacity:0.7;}	
+}
+#Password{
+-webkit-font-smoothing: antialiased;
+	border-color:rgba(150,167,203,0.5);
+	border-width:2px;
+	border-style:solid;
+border-radius:2%;
+margin-top:0em;
+margin-bottom:0em;
+
+width:15em;
+height:1.7em;
+font-size:1.6em;
+line-height:0.5em;
+pointer-events:none;
+opacity:0.5;
+transform:scale(0.5,0.5);
+
+}
+.PassOpacity{
+pointer-events:auto !important;
+opacity:1 !important;	
+}
+#Password:hover{
+border-color:rgba(150,167,203,1);
+}
+.really{
+animation-name:PushPassword;
+animation-duration:2s;
+animation-fill-mode: forwards;
+}
+.reallyNow{
+	animation-name:PushBackPassword;
+animation-duration:2s;
+animation-fill-mode: forwards;
+}
+
+@keyframes PushPassword{
+	0%{margin-top:0;margin-bottom:0;transform:scale(0.5,0.5);}
+	100%{margin-top:1em;margin-bottom:1em;transform:scale(1,1);}
+}
+@keyframes PushBackPassword{
+	0%{margin-top:1em;margin-bottom:1em;transform:scale(1,1);}
+	100%{margin-top:0;margin-bottom:0;transform:scale(0.5,0.5);}
+}
+
+
+.form{
+
+	margin-top:5em;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	color:white;
+	width:100%;
+	
+}
+
+#Username{
+	border-color:rgba(150,167,203,0.5);
+	border-width:2px;
+	border-style:solid;
+border-radius:2%;margin:1em;
+margin-bottom:0.5em;
+width:15em;
+height:1.7em;
+font-size:1.6em;
+line-height:0.5em;
+}
+#Username:hover{border-color:rgba(150,167,203,1);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===========================================================================================================*/
+/*=====================================         FOR SUBMIT       ============================================*/
+/*===========================================================================================================*/
+#submit{
+	display:none;
+
+}
+
+#SubmitBorder{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding: 1px;
+	width:15em;
+height:1.7em;
+background: radial-gradient( black,white ,grey,#CDCED0,#D5D0CD,black,#D5D0CD);
+  border-radius: 8px;
+	font-size:1.6em;
+	border-radius:10px; 
+
+}
+
+
+
+#SubmitBorder:hover #InsideSubmit{background-color:rgb(90,0,0);}
+
+
+#InsideSubmit{
+	display:flex;
+text-align:center;
+
+	justify-content:center;
+background-color:rgb(0,91,183);
+ position:relative;
+  width:14.7em;
+  height:1.5em;
+  border-radius: 8px;
+  box-shadow:0px 0px 1px black;
+ 
+}
+#ThreeD{
+	border-radius:8px 8px 0px 0px;
+	position:absolute;
+	
+	width:15em;
+	height:0.63em;
+	background-color:rgba(70,163,255,0.3);
+
+	/*The white shadow that seem like 3d button..the margin-top=SubmitBorderHeight -ThreeD height */
+margin-bottom:1em;
+
+
+}
+#CloseRegister{
+position:absolute;
+right:1em;
+top:0.5em;
+}
+#CloseRegister:hover{
+	color:orange;
+}
+#Infobutton{
+	padding:0;
+	border:none;
+	background:none;
+	color:orange;
+}
+#MoreInfo{
+	font-style:italic;
+	position:absolute;
+	top:41em;
+}
+#Register{
+	border-radius:2px;
+	align-items:center;
+	justify-content:center;
+	width:24em;
+	height:10em;
+	font-style:italic;
+	position:fixed;
+	top:35em;
+	display:none;
+	color:white;
+	background-color:black;
+	border-color:black;
+	border-width:1px;
+	border-style:solid;
+	box-shadow:0px 0px 5px orange;
+}
+#Register p{
+	text-align:left;
+	margin-left:0.5em;
+}
+#SignUpLink{
+		font-style:italic;
+	position:absolute;
+	top:29em;
+	font-size:1.5em;
+}
+
+
+
+
+#Home{
+margin-left:19.5em;
+
+position:absolute;
+
+width:4.5em;
+height:4.5em;
+}
+#Home img{
+	width:100%;
+	height:auto;
+}
+#HomeOut{
+
+margin-left:19.5em;
+	position:absolute;
+	
+	width:4.5em;
+height:4.5em;
+
+}
+#HomeOut img{
+	width:100%;
+	height:auto;
+}
+#HomeOut:hover{
+animation-name:HomeOff;
+animation-duration:1s;
+animation-fill-mode:forwards;
+}
+@keyframes HomeOff{
+0%{opacity:1;}
+100%{opacity:0;}
+}
+#WraptheHome{
+	top:14em;
+	width:6em;
+	height:6em;
+	display:block;
+	position:absolute;
+}
+
+#GoHomeText{
+	white-space:nowrap;
+	font-size:1.2em;
+	text-align:center;
+	margin-left:16.3em;
+	position:absolute;
+	margin-top:3.9em;
+	animation-name:textColor;
+	animation-duration:10s;
+	animation-iteration-count:infinite;
+}
+@keyframes textColor{
+	0%{color:black;}
+	50%{color:rgb(255,165,0);}
+	100%{color:black;}
+}

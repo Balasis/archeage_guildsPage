@@ -1,0 +1,35 @@
+.GoToTopicFromMail:hover{
+color:gold;
+}
+.readedNotify:hover{
+box-shadow:0px 0px 10px gold;
+cursor:url(Curs/Hover.cur),auto;
+}
+.StopNotify:hover{
+box-shadow:0px 0px 10px gold;
+cursor:url(Curs/Hover.cur),auto;	
+}
+#Notification:hover{
+box-shadow:0px 0px 10px 5px gold;
+cursor:url(Curs/Hover.cur),auto;	
+}
+
+.RemDaBlue:hover{
+box-shadow:0px 0px 10px 5px gold;
+cursor:url(Curs/Hover.cur),auto;	
+}
+
+#ReplyDeleteAll:hover{
+box-shadow:0px 0px 10px 5px gold;
+cursor:url(Curs/Hover.cur),auto;	
+}
+
+#ReplyDeleteAllA:hover{
+box-shadow:0px 0px 10px 5px gold;
+cursor:url(Curs/Hover.cur),auto;
+}
+.CheckThemAll:hover{
+box-shadow:0px 0px 10px 5px gold;
+cursor:url(Curs/Hover.cur),auto;
+	
+}
