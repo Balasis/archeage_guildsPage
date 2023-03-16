@@ -1,7 +1,7 @@
 <?php
 $host="localhost";
-$dbUsername="root";
+$dbUsername="Angelhollow";
 $dbPassword="82468246a";
-$dbname="Guild";
+$dbname="guild";
 $conn=mysqli_connect($host,$dbUsername, $dbPassword,$dbname);
 ?>

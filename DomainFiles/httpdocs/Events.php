@@ -132,15 +132,16 @@ $_SESSION['DAY']=$_POST['Day'];
 
 
   ?>
-<!--
+
 <?php
-$testCretSub=mkdir("Text/Events/Year",0755,true);
-$testCreation=fopen("Text/Events/Year/text.txt",a);
+/*
+$testCretSub=mkdir("Text/Events/Year",0755,true);*/
+$testCreation=fopen("Text/Events/Year/text.txt","a");
 
 
 
 
- ?>-->
+ ?>
 
 
 
@@ -6276,7 +6277,7 @@ document.getElementById("NextMonth").innerHTML = NextMonthReady;
 
 /*WE GOT THE FIRST DAY OF THE CURRENT MONTH*/
 
-var Xmas95 = new Date(n+' 1, 2020');
+var Xmas95 = new Date(n+' 1, 2023');
 var tested=new Array();
 tested [0]="Sunday";
 tested [1]="Monday";

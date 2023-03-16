@@ -1,22 +1,127 @@
 
 
 
-Program Files\MySQL\MySQL Server 5.6\bin
+Sadly the SQL recovery file was made with an older version of sql. So anyway copy -paste the create /insert queries from below ..
+
+(No need to insert anything else into account e.t.c since you can do this from the website once you have created the following ones/
+there's only need for one administrator account to begin the procedure which is the insert query below )
+
+Create Database guild;
+USE `guild`;
+
+CREATE TABLE `accounts` (
+`Id` int(11) NOT NULL AUTO_INCREMENT,
+`Username` varchar(200) DEFAULT NULL,
+`Password` text,
+`PlayerName` varchar(150) DEFAULT NULL,
+`NoDoubleLogin` text,
+`Rank` int(11) DEFAULT '0',
+`RankInGame` varchar(50) DEFAULT 'member',
+`NumberOfPosts` int(11) DEFAULT '0',
+PRIMARY KEY (`Id`),
+UNIQUE KEY `Username_UNIQUE` (`Username`),
+UNIQUE KEY `PlayerName_UNIQUE` (`PlayerName`)
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=latin1;
 
 
 
-to create the database backup get in cmd with admin...
-then change directory (cd.. ) to program files e.t.c /bin which mysqldumb.exe is..
-then type:
-mysqldump --user=<username> --password=<password> --result-file=<path_to_backup_file> --databases <database_name>
-for example:
-mysqldump --user=root --password=82468246a --result-file=c:\guild.sql --databases guild
+
+CREATE TABLE `adminaccounts` (
+`ID` int(11) NOT NULL AUTO_INCREMENT,
+`Username` varchar(150) DEFAULT NULL,
+`Password` text,
+`PlayerName` varchar(100) DEFAULT NULL,
+`NoDoubleLogin` int(11) DEFAULT NULL,
+`Rank` int(11) DEFAULT '5',
+`RankInGame` varchar(50) DEFAULT 'officer',
+`NumberOfPosts` int(11) DEFAULT '0',
+PRIMARY KEY (`ID`),
+UNIQUE KEY `Username_UNIQUE` (`Username`),
+UNIQUE KEY `PlayerName_UNIQUE` (`PlayerName`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 
-to restore the database from the created sql file you type this in cmd(admin)
+INSERT INTO `adminaccounts` VALUES 
+(1,'Admin','12345678','Admin',11976,5,'officer',4);
 
-:mysql --user=root --password=82468246a <c:\guild.sql
 
-(guild was the name of the file created from guild schema)..
-mysqldump creates the database (in program files e.t.c/ bin)
-mysql 
+CREATE TABLE `category` (
+`Id` int(11) NOT NULL AUTO_INCREMENT,
+`category` text,
+`LastTopic` text,
+`categoryInfo` text,
+`LastTopicBy` varchar(50) DEFAULT NULL,
+`LastTopicDateTime` datetime DEFAULT NULL,
+`AllowCreateTopic` int(11) DEFAULT NULL,
+PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+
+
+
+CREATE TABLE `notificationtopic` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`whichTopic` int(11) DEFAULT NULL,
+`OwnerOfTopic` text,
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+
+
+CREATE TABLE `post` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`postedBy` text,
+`postedAt` datetime DEFAULT NULL,
+`postText` longtext,
+`GroupOfPost` int(11) DEFAULT NULL,
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=112 DEFAULT CHARSET=latin1;
+
+
+
+
+CREATE TABLE `reply` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`ReplyTo` varchar(45) DEFAULT NULL,
+`InTopic` int(11) DEFAULT NULL,
+`ReplyFrom` varchar(45) DEFAULT NULL,
+`postedAt` datetime DEFAULT NULL,
+`ReplyText` longtext,
+`IdOfPostTable` int(11) DEFAULT NULL,
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE `serialkeys` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`serialKeys` bigint(20) DEFAULT NULL,
+PRIMARY KEY (`id`),
+UNIQUE KEY `serialKeys_UNIQUE` (`serialKeys`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+INSERT INTO `serialkeys` VALUES (1,5656);
+
+CREATE TABLE `topic` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`NameOfTopic` text,
+`GroupOfTopic` int(11) DEFAULT NULL,
+`LastPost` longtext,
+`AdminPost` int(11) DEFAULT NULL,
+`StartedBy` text,
+`LastPostDateTime` text,
+`StartedAt` datetime DEFAULT NULL,
+`Subject` text,
+`Notify` int(11) DEFAULT NULL,
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=latin1;
+
+
+INSERT INTO `guild`.`category` (`category`, `categoryInfo`, `AllowCreateTopic`) VALUES ('News', 'well says it all', '1');
+INSERT INTO `guild`.`category` (`category`, `categoryInfo`, `AllowCreateTopic`) VALUES ('This is another', 'Sample Sample', '1');
+
+UPDATE `guild`.`topic` SET `LastPost` = '15:00 16/3/2023' WHERE (`id` = '49');
+
+
+
+
