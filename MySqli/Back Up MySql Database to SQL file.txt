@@ -1,5 +1,10 @@
+This is such an old project that back then I didn't even care about creating the relations between the tables.
+As you can see there are only Private keys without a hint of Foreign ones. So there are just being logicly connected in PHP.
+(like inserting the same value in the related columns of different tables and when Selecting them php check thems out)
+If you really wanna ensure Integrity and whatever other advantages ERD tables offer you will sadly have to take a look how the tables
+are related in php .(No worries they are really obvious even by just looking at the columns names)
 
-you need to create just a database named guild and import the rest.(well you can actually see it since sql files start with the "guild."
+You need to create just a database named guild and import the rest.(well you can actually see it since sql files start with the "guild."
 
 In case you fail to import the sql tables in this folder just create the following.
 
