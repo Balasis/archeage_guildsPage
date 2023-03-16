@@ -99,7 +99,7 @@ color:white;
 background-color:orange;
 width:10em;
 border-radius:15px 15px 15px 15px;
-
+z-index:9999;
 }
 .AdminLinks{
 display:block;

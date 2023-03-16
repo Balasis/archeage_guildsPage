@@ -809,7 +809,7 @@ echo"<span class='lastTopic'>";
 
 
  $takeThis=$row['LastTopicBy'];
-  $checkIfAdmin=mysqli_query($conn,"SELECT Rank FROM adminaccounts Where PlayerName='$takeThis' ");
+  $checkIfAdmin=mysqli_query($conn,"SELECT 'Rank' FROM adminaccounts Where PlayerName='$takeThis' ");
  if ($checkIfAdmin->num_rows>0){
 echo"<span class='lastTopicbyAdmin'>";
  }else{

@@ -1,12 +1,13 @@
 
+you need to create just a database named guild and import the rest.(well you can actually see it since sql files start with the "guild."
 
-
-Sadly the SQL recovery file was made with an older version of sql. So anyway copy -paste the create /insert queries from below ..
+In case you fail to import the sql tables in this folder just create the following.
 
 (No need to insert anything else into account e.t.c since you can do this from the website once you have created the following ones/
 there's only need for one administrator account to begin the procedure which is the insert query below )
 
-Create Database guild;
+Create Database guild; 
+
 USE `guild`;
 
 CREATE TABLE `accounts` (

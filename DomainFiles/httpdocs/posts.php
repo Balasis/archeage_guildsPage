@@ -965,7 +965,7 @@ color:red;
 }
 
 #SignHoverIt{
-
+	background-size: 100%;
 	background-position:50% 50%;
 background-image:url(Pic/GoBack.png);
 }
@@ -1167,10 +1167,10 @@ echo "<div class='MiddlePostDiv'>";
 
 echo "<div class='PosterInfo'>";
   $takeThis=$row['postedby'];
-  $checkIfAdmin=mysqli_query($conn,"SELECT Rank,RankInGame,NumberOfPosts FROM adminaccounts Where PlayerName='$takeThis'");
+  $checkIfAdmin=mysqli_query($conn,"SELECT 'Rank',RankInGame,NumberOfPosts FROM adminaccounts Where PlayerName='$takeThis'");
 $checkIfAdminl=mysqli_fetch_array($checkIfAdmin, MYSQLI_ASSOC);
 
-$checkRank=mysqli_query($conn,"SELECT RankInGame,NumberOfPosts FROM accounts Where PlayerName='$takeThis'");
+$checkRank=mysqli_query($conn,"SELECT 'RankInGame',NumberOfPosts FROM accounts Where PlayerName='$takeThis'");
 $checkRankl=mysqli_fetch_array($checkRank, MYSQLI_ASSOC);
 
  if ($checkIfAdmin->num_rows>0){
