@@ -143,18 +143,6 @@ label{
 
 100%{transform:scale(1.0);margin-top:0.0em;}
 }
-
-
-
-
-
-
-
-
-
-
-
-/*=======================COPY PASTE FROM HERE =============*/
 #Forum{
 
 	left:5em;
@@ -198,6 +186,7 @@ label{
 margin-right:3em;
 }
 #PictureLog{
+	
 	z-index:960;
 	overflow:hidden;
 	border-radius:360%;
@@ -355,6 +344,7 @@ z-index:-1;
 
 
 #SignOutLabel{
+	
 	position:absolute;
 	margin-top:9.8em;
 	font-size:0.7em;
@@ -372,11 +362,12 @@ color:white;
 	width:100%;
 	text-align:center;
 	position:absolute;
-	
+
 	color:black;
 
 }
 #ChangeProfilePictureLabel:hover{
+
 cursor:url(Curs/Hover.cur),auto;
 color:white;
 }
@@ -391,6 +382,7 @@ color:white;
 	line-height:1.2;
 	margin-left:-1em;
 
+
 }
 #ChangeDaLogoSize img{
 	position:absolute;
@@ -399,19 +391,30 @@ color:white;
 	width:1em;
 	height:auto;
 }
-#ChangeDaLogoSize:hover{
-	cursor:url(Curs/Hover.cur),auto;
-}
+
 
 
 #Skoupa{
 display:none;
 }
 
-#forgoten:hover{
-	cursor:url(Curs/Hover.cur),auto;
-}
-/*===========================TILL HERE COPY PASTE =====*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -478,7 +481,7 @@ animation-iteration-count:1 !important;
 	z-index:1;
 	padding:0;
 	margin:0;
-	margin-top:5.5em;
+	margin-top:2.5em;
 	display:block;
 	max-width:100%;
 	height:50em;
@@ -502,10 +505,11 @@ animation-iteration-count:1 !important;
 iframe{
 	padding:0;
 	border:0;
-	z-index:100;
+	pointer-events: none;
+	z-index:1;
 	min-width:95em;
 	min-height:100%;
-	margin-top:0em;
+	margin-top:2em;
 	display:block;
 	position:relative;
 	top:50%;
@@ -522,7 +526,15 @@ iframe{
 /*========================================🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇======================================*/
 #AfterVideo{
 transform:translateZ(0);
+
 border-width:5px;
+animation-name:Neon;
+animation-duration:0s;
+animation-delay:4s;
+animation-timing-function:linear;
+animation-iteration-count:0;
+	
+		
 	z-index:80;
 	width:100%;
 	position:relative;	
@@ -631,7 +643,90 @@ transform:rotate(325deg);
 /*End of Winds And Shield*/
 
 
+
+
 /*==================================================================================================*/
+
+/*=================================       ALL CLASSES FOR THEMES ====================================*/
+
+/*========================================🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇======================================*/
+
+.DescriptionDiv{
+
+	position:relative;
+	overflow:hidden;
+	background-size:cover;
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+	background-color:rgb(36,36,36);
+	margin-left:-0.10em;
+	color:white;
+	width:100%;
+	height:28.125em;
+	border-width:2px;
+	border-style:double;
+	border-color:rgb(235,207,146);
+}
+
+.headtext{
+	max-width:8em;
+	text-align:center;
+	display:block;
+	position:relative;
+	background-color:;
+	word-spacing: 0px;
+	overflow:hidden;	
+	line-height:77.4px;	
+	color:rgb(235, 222, 194);
+	font-family:Open Sans;
+	font-size:2.5em;
+	text-shadow: 1px 1px  black;
+   -webkit-font-smoothing: antialiased;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;    
+}
+
+.DescriptionTextDiv{
+	background-color:;
+	max-width:20em;
+	line-height:1.2em;	
+	
+	position:relative;	
+	-webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+	font-family:Ebrima;
+	font-style:Oblique;
+	color:rgb(35,35,35);
+	font-size:1.8em;
+overflow:hidden;
+   text-shadow: 2px 2px 10px white;
+text-align:left;
+justify-content:center;
+vertical-align:center;
+ display: flex;
+	flex-direction: column;
+}
+
+.buttonThemeOuterDiv{
+display:block;
+overflow:hidden;
+position:relative;
+width:20em;
+height:4em;
+background-color:;
+
+}
+.buttonThemeOuterDiv a{
+	border-color:white;
+	color:rgb(235,207,146);
+}
+
+
+/*END CLASSES FOR ALL THEMES*/
+
+
+ /*==================================================================================================*/
 
 /*=================================        Section 1  ====================================*/
 
@@ -1038,9 +1133,18 @@ color:white;
 	font-size:1.4em;
 	line-height:0.5em;
 }
+	
+
+
+
+
+
+
+
 
 /*======================================================================================================*/
 /*============================================  MEDIA ONLY==============================================*/
 /*========================================🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇=========================================*/
+
 
 @media (max-width:63em){.buttonThemeOuterDiv{margin-top:-2em !important;}}
