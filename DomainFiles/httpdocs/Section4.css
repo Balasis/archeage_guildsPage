@@ -1,10 +1,17 @@
-
-html,body{padding:0;
+html{padding:0;
 	margin:0;
 	background-color:rgb(36,36,36);
 	cursor:url(Curs/wow.cur),auto;
-	margin:auto;
 	background-image:url(Pic/BgButt.gif);
+	width:100%;
+	overflow-x:hidden;
+}
+
+body{
+	padding:0;
+	margin:auto;
+    width:80em;
+	
 }
 
 a{  cursor:url(Curs/Hover.cur),auto;    
@@ -1022,6 +1029,5 @@ color:white;
 /*======================================================================================================*/
 /*============================================  MEDIA ONLY==============================================*/
 /*========================================🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇=========================================*/
-@media (max-width:83em){html,body{font-size:1vw;} .DescriptionTextDiv{margin-top:-3em !important;}
-								iframe{position:relative;}}
+
 @media (max-width:63em){.buttonThemeOuterDiv{margin-top:-2em !important;}}

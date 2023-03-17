@@ -1,32 +1,35 @@
 
-html,body{padding:0;
+html{padding:0;
 	margin:0;
 	background-color:rgb(36,36,36);
 	cursor:url(Curs/wow.cur),auto;
-	margin:auto;
 	background-image:url(Pic/BgButt.gif);
+	width:100%;
+	overflow-x:hidden;
 }
+
+body{
+	padding:0;
+	margin:auto;
+    width:80em;
+	
+}
+
 
 a{  cursor:url(Curs/Hover.cur),auto;    
 	text-decoration:none;
-	color:black;
+	color:inherit;
 }
-
-button{
-	cursor:url(Curs/Hover.cur),auto;
+label{
+	cursor:url(Curs/Hover.cur),auto;  
 }
-span{
-	cursor:url(Curs/Hover.cur),auto;
-}
-
-
 #WrapperFromBodyToWholePageDiv{
 	max-width:112.5em;
 	margin:auto;
 	padding:0;
-	overflow:hidden;
-	background-color:transparent;
 	
+	background-color:transparent;
+	scale:0.9 1;
 	background-position:50% 50%;
 }
 #WholePageDiv{
@@ -55,7 +58,8 @@ span{
 	width:100%;
 	max-width:93.75em;
 	padding:0;
-	top:-0.9em;
+	top:-3.1em;
+
 	
 	
 }
@@ -1038,6 +1042,5 @@ color:white;
 /*======================================================================================================*/
 /*============================================  MEDIA ONLY==============================================*/
 /*========================================🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇🡇=========================================*/
-@media (max-width:83em){html,body{font-size:1vw;} .DescriptionTextDiv{margin-top:-3em !important;}
-								iframe{position:relative;}}
+
 @media (max-width:63em){.buttonThemeOuterDiv{margin-top:-2em !important;}}

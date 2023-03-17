@@ -3,13 +3,13 @@ html{padding:0;
 	margin:0;
 	background-color:rgb(36,36,36);
 	cursor:url(Curs/wow.cur),auto;
-
 	background-image:url(Pic/BgButt.gif);
 	width:100%;
 	overflow-x:hidden;
 }
 
-body{padding:0;
+body{
+	padding:0;
 	margin:auto;
     width:80em;
 	
@@ -981,8 +981,6 @@ margin-left:2em;
 
 }
 #Section4Link1{
-
-overflow:;
 position:relative;
 margin-top:0.5em;
 margin-left:0.6em;
