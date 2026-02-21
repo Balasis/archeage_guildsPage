@@ -1,4 +1,4 @@
-Update: This webpage although uploaded 3 years ago to github it was made ~10 - 12 years ago (Stackoverflow era). Have 0 expectation of any coding principal to even exist.
+Update: This webpage although uploaded 3 years ago to github it was made 10-12 years ago (Stack Overflow / W3schools era). Have 0 expectation of any coding principals to even exist.
 ---------------------------------------------
 This website was initially created for a guild in an rpg/mmo named archeage. Unfortunately the guild was disbanded before I
 could finish the website(since I did this alone it took me a bit.). Since it was meant for a guild only the administrators
